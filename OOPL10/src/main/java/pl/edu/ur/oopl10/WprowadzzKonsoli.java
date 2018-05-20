@@ -56,5 +56,32 @@ public class WprowadzzKonsoli
         }
 }
 
+    public static void zad1menu()
+    {
+        int w1;
+        Scanner s = new Scanner(System.in);
+        do {
+            System.out.println("1.Int,2.Short,3.Char,4.Double");
+            w1 = s.nextInt();
+            switch (w1) {
+                case 1:
+                    wprowadzint();
+                    break;
+                case 2:
+                    wprowadzshort();
+                    break;
+                case 3:
+                    wrowadzchar();
+                    break;
+                case 4:
+                    wprowadzdouble();
+                    break;
+                case 5:
+                    Main.main(new String[0]);
+                    break;
+            }
+        }while(w1!=5);
+    }
+
 }
 
